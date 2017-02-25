@@ -60,7 +60,29 @@ table {
 	font-size:20px;
 	margin-left: 520px;
 	margin-top: 10px;
-	border: 2px solid #000099;
+	border: 4px solid #000099;
+	border-radius: 10px;
+}
+
+.to-do-list-cool {
+	background-color: white;
+	height:500px;
+	width:400px;
+	font-size:20px;
+	margin-left: 520px;
+	margin-top: 10px;
+	border: 4px solid purple;
+	border-radius: 10px;
+}
+
+.to-do-list-coolest {
+	background-color: white;
+	height:500px;
+	width:400px;
+	font-size:20px;
+	margin-left: 520px;
+	margin-top: 10px;
+	border: 4px solid orange;
 	border-radius: 10px;
 }
 
@@ -104,6 +126,88 @@ table {
 .check-box {
 	transform: scale(1.25) 
 }
+
+
+.control-panel{
+	margin-left: 600px;
+	margin-top: 10px;
+}
+
+.ctrl-btn {
+	float:left;
+	margin-right:20px;
+	margin-top: 20px;
+	height:20px;
+	font-size:20px;
+	font-family: 'Arvo', serif;
+	color:#000099;
+}
+
+/*.cool-list-item-appear {
+  opacity: 0.01;
+}
+
+.cool-list-item-appear.cool-list-item-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}*/
+
+.cool-list-item-enter {
+  opacity: 0.01;
+}
+
+.cool-list-item-enter.cool-list-item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.cool-list-item-leave {
+  opacity: 1;
+}
+
+.cool-list-item-leave.cool-list-item-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.coolest-list-item-enter {
+ transform: rotateY(180deg);
+}
+
+.coolest-list-item-enter.coolest-list-item-enter-active {
+ animation: flip-in 600ms ease-out forwards;
+}
+
+.coolest-list-item-leave {
+  transform: rotateY(0deg);
+}
+
+.coolest-list-item-leave.coolest-list-item-leave-active {
+  animation: flip-out 600ms ease-out forwards;
+}
+
+@keyframes flip-in {
+	from {
+		transform: rotateY(360deg);
+	}
+	to {
+		transform:rotateY(0deg);
+	}
+}
+
+
+@keyframes flip-out {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform:rotateY(360deg);
+	}
+}
+
+
+
+
 
 
 
